@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-cover bg-center" style="background-image: url('background-image.jpg')">
+    <header class="bg-gray-800 text-white text-center py-4">
+        <h1 class="text-2xl font-bold">Stock Market Tracker</h1>
+    </header>
+    <main class="max-w-screen-md mx-auto p-4">
+        <div class="bg-white p-6 rounded-md shadow-md">
+            <h2 class="text-lg font-semibold mb-4">Stock Information</h2>
+            <div class="flex flex-col gap-4">
+                <div class="flex flex-col">
+                    <label for="symbol" class="mb-1">Enter Stock Symbol:</label>
+                    <input type="text" id="symbol" placeholder="e.g., NIFTY50" class="p-2 border border-gray-300 rounded-md">
+                </div>
+                <button id="getStock" class="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">Get Stock Data</button>
+            </div>
+            <div id="stockResults" class="mt-4">
+                <!-- Stock data will be displayed here -->
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
